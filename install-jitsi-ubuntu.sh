@@ -8,7 +8,7 @@ apt install apt-transport-https curl software-properties-common openjdk-8-jre-he
 echo ""
 echo " === INSTALL NGINX === "
 echo ""
-apt install nginx -y
+apt install -y nginx
 systemctl start nginx.service
 systemctl enable nginx.service
 
