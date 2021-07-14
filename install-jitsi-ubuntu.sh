@@ -3,7 +3,7 @@
 echo ""
 echo " === INSTALL DEPEDENCIES === "
 echo ""
-apt install apt-transport-https curl software-properties-commo
+apt install apt-transport-https curl software-properties-common openjdk-8-jre-headless -y
 
 echo ""
 echo " === ENABLE PACKAGE REPOSITORY UNIVERSE === "
