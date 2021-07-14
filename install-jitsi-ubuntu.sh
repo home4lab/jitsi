@@ -6,6 +6,14 @@ echo ""
 apt install apt-transport-https curl software-properties-common openjdk-8-jre-headless -y
 
 echo ""
+echo " === INSTALL NGINX === "
+echo ""
+apt install nginx -y
+systemctl start nginx.service
+systemctl enable nginx.service
+
+
+echo ""
 echo " === ENABLE PACKAGE REPOSITORY UNIVERSE === "
 echo ""
 apt-add-repository universe
