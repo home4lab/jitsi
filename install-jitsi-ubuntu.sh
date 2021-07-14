@@ -38,7 +38,7 @@ sudo ufw allow 10000/udp
 sudo ufw allow 22/tcp
 sudo ufw allow 3478/udp
 sudo ufw allow 5349/tcp
-sudo ufw enable -y
+sudo ufw enable
 
 echo ""
 echo " === CHECKING STATUS FIREWALL === "
