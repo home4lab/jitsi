@@ -34,6 +34,8 @@ constraints: {
 
 
 /etc/prosody/conf.avail/"your domain fqdn".cfg.lua
+change "anonymous" with "internal_plain"
+
 /etc/jitsi/jicofo/sip-communicator.properties
 add this line
 org.jitsi.jicofo.auth.URL=XMPP:"your domain fqdn"
