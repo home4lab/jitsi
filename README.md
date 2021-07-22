@@ -16,7 +16,7 @@ org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
 SET RESOLUTION
-/etc/jitsi/meet/<domain fqdn>-config.js
+/etc/jitsi/meet/"your domain fqdn"-config.js
 
 
 resolution: 720,
@@ -33,14 +33,14 @@ constraints: {
 # need open port tcp 443, and udp 10000
 
 
-/etc/prosody/conf.avail/<domain fqdn>.cfg.lua
+/etc/prosody/conf.avail/"your domain fqdn".cfg.lua
 /etc/jitsi/jicofo/sip-communicator.properties
 add this line
-org.jitsi.jicofo.auth.URL=XMPP:<domain fqdn>
+org.jitsi.jicofo.auth.URL=XMPP:"your domain fqdn"
 
 systemctl restart prosody
 systemctl restart jicofo 
 systemctl restart jitsi-videobridge2
 
-prosodyctl register boby <domain fqdn> password
+prosodyctl register boby "your domain fqdn" password
 
