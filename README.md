@@ -17,7 +17,7 @@ org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
 SET RESOLUTION
-/etc/jitsi/meet/"your domain fqdn"-config.js
+/etc/jitsi/meet/$(hostname -f)-config.js
 
 
 resolution: 720,
@@ -45,9 +45,9 @@ systemctl restart prosody
 systemctl restart jicofo 
 systemctl restart jitsi-videobridge2
 
-prosodyctl register "user" "your domain fqdn" "password"
+prosodyctl register "user" $(hostname -f) "password"
 
-or u can use this prosodyctl adduser "user"@"your domain fqdn"
+or u can use this prosodyctl adduser "user"@$(hostname -f)
 then input the passsword
 
 
