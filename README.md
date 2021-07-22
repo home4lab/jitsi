@@ -1,4 +1,4 @@
-# jitsi
+# jitsi meet self host
 
 echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
 wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
@@ -30,8 +30,8 @@ constraints: {
 		},
 
 
-need open port tcp 443, and udp 10000
-====
+# need open port tcp 443, and udp 10000
+
 
 /etc/prosody/conf.avail/<domain fqdn>.cfg.lua
 /etc/jitsi/jicofo/sip-communicator.properties
