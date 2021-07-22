@@ -1,4 +1,5 @@
 # jitsi meet self host
+need open port tcp 443, and udp 10000
 
 echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
 wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
@@ -30,7 +31,7 @@ constraints: {
 		},
 
 
-# need open port tcp 443, and udp 10000
+
 
 
 /etc/prosody/conf.avail/"your domain fqdn".cfg.lua
@@ -44,5 +45,9 @@ systemctl restart prosody
 systemctl restart jicofo 
 systemctl restart jitsi-videobridge2
 
-prosodyctl register boby "your domain fqdn" password
+prosodyctl register "user" "your domain fqdn" "password"
+
+or u can use this prosodyctl adduser "user"@"your domain fqdn"
+then input the passsword
+
 
