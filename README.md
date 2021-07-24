@@ -20,18 +20,17 @@ SET RESOLUTION
 /etc/jitsi/meet/$(hostname -f)-config.js
 
 
-resolution: 720,
-maxFps: 15,
-
-constraints: {
-	video: {
-		aspecRatio: 16/9,
-		frameRate: {
-			max: 15
-		},
-
-
-
+     videoQuality: {
+        preferredCodec: 'VP9',
+        maxBitratesVideo: {
+            low: 200000,
+            standard: 500000,
+            high: 1500000
+        },
+        minHeightForQualityLvl: {
+            360: 'standard',
+            720: 'high'
+        },
 
 
 /etc/prosody/conf.avail/"your domain fqdn".cfg.lua
