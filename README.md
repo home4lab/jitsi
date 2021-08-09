@@ -1,3 +1,8 @@
+# how to ?
+chmod +x install
+bash install
+
+
 # jitsi meet self host
 need open port tcp 443, and udp 10000
 
@@ -7,7 +12,7 @@ wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
 apt update
 apt install jitsi-meet
 
-/usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
+
 
 
 /etc/jitsi/videobridge/sip-communicator.properties
