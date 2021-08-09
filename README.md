@@ -13,6 +13,8 @@ bash install
 # after installation
 /etc/jitsi/meet/$(hostname -f)-config.js
 
+if you want to change frame rate from desktop sharing, enable this line
+
     desktopSharingFrameRate: {
          min: 10,
          max: 15
