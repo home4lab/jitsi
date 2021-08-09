@@ -39,13 +39,15 @@ SET RESOLUTION
         },
 
 
-/etc/prosody/conf.avail/"your domain fqdn".cfg.lua
+/etc/prosody/conf.avail/$(hostname -f).cfg.lua
 change "anonymous" with "internal_plain"
 
 /etc/jitsi/jicofo/sip-communicator.properties
 add this line
 org.jitsi.jicofo.auth.URL=XMPP:"your domain fqdn"
 
+
+# for restart service
 systemctl restart prosody
 systemctl restart jicofo 
 systemctl restart jitsi-videobridge2
