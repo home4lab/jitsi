@@ -44,6 +44,7 @@ echo "org.jitsi.jicofo.auth.URL=XMPP:$(hostname -f)" >> /etc/jitsi/jicofo/sip-co
 prosodyctl register "user" $(hostname -f) "password"
 
 or u can use this prosodyctl adduser "user"@$(hostname -f)
+
 then input the passsword
 
 
