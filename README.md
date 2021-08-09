@@ -1,5 +1,6 @@
 # how to ?
 chmod +x install
+
 bash install
 
 
