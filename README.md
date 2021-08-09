@@ -50,8 +50,11 @@ then input the passsword
 
 # how to restart service
 systemctl restart prosody
-systemctl restart jicofo 
+
+systemctl restart jicofo
+
 systemctl restart jitsi-videobridge2
+
 
 # OPTIONAL
 
