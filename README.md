@@ -11,12 +11,12 @@ bash install
 
 
 # after installation
-
-
-
-
-SET RESOLUTION
 /etc/jitsi/meet/$(hostname -f)-config.js
+
+    desktopSharingFrameRate: {
+         min: 10,
+         max: 15
+     },
 
 
      videoQuality: {
