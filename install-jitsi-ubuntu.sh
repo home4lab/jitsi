@@ -18,10 +18,6 @@ echo " === ENABLE PACKAGE REPOSITORY UNIVERSE === "
 echo ""
 apt-add-repository universe
 
-
-# hostnamectl set-hostname jitsimeet.freenetwork.co.id
-
-
 echo ""
 echo " === ADDING GPG KEY AND SOURCELIST === "
 echo ""
@@ -49,7 +45,3 @@ echo ""
 echo " === INSTALL JITSI MEET === "
 echo ""
 apt install jitsi-meet
-
-
-
-
