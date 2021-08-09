@@ -56,7 +56,7 @@ systemctl restart jicofo
 systemctl restart jitsi-videobridge2
 
 
-# OPTIONAL
+# optional
 
 /etc/jitsi/videobridge/sip-communicator.properties
 
