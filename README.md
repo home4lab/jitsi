@@ -1,25 +1,18 @@
 # how to ?
+first, you need to set your hostname
+
+hostnamectl set-hostname "your domain FQDN"
+
+then run the script
+
 chmod +x install
 
 bash install
 
 
-# jitsi meet self host
-need open port tcp 443, and udp 10000
-
-echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
-wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
-
-apt update
-apt install jitsi-meet
+# after installation
 
 
-
-
-/etc/jitsi/videobridge/sip-communicator.properties
-
-org.ice4j.ice.harvest.NAT_HARVESTER_LOCAL_ADDRESS=<Local.IP.Address>
-org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
 SET RESOLUTION
@@ -54,9 +47,14 @@ or u can use this prosodyctl adduser "user"@$(hostname -f)
 then input the passsword
 
 
-# how to restar service
+# how to restart service
 systemctl restart prosody
 systemctl restart jicofo 
 systemctl restart jitsi-videobridge2
+
+# OPTIONAL
+/etc/jitsi/videobridge/sip-communicator.properties
+org.ice4j.ice.harvest.NAT_HARVESTER_LOCAL_ADDRESS=<Local.IP.Address>
+org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
