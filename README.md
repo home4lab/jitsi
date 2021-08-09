@@ -53,8 +53,11 @@ systemctl restart jicofo
 systemctl restart jitsi-videobridge2
 
 # OPTIONAL
+
 /etc/jitsi/videobridge/sip-communicator.properties
+
 org.ice4j.ice.harvest.NAT_HARVESTER_LOCAL_ADDRESS=<Local.IP.Address>
+
 org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
