@@ -39,22 +39,24 @@ SET RESOLUTION
         },
 
 
-/etc/prosody/conf.avail/$(hostname -f).cfg.lua
-change "anonymous" with "internal_plain"
 
-/etc/jitsi/jicofo/sip-communicator.properties
-add this line
-org.jitsi.jicofo.auth.URL=XMPP:"your domain fqdn"
+# how to make authentication
+edit this file >> **/etc/prosody/conf.avail/$(hostname -f).cfg.lua**
 
+change **anonymous** with **internal_plain**
 
-# for restart service
-systemctl restart prosody
-systemctl restart jicofo 
-systemctl restart jitsi-videobridge2
+echo "org.jitsi.jicofo.auth.URL=XMPP:$(hostname -f)" >> /etc/jitsi/jicofo/sip-communicator.properties
 
+# how to create user login
 prosodyctl register "user" $(hostname -f) "password"
 
 or u can use this prosodyctl adduser "user"@$(hostname -f)
 then input the passsword
+
+
+# how to restar service
+systemctl restart prosody
+systemctl restart jicofo 
+systemctl restart jitsi-videobridge2
 
 
