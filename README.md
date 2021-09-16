@@ -67,3 +67,16 @@ org.ice4j.ice.harvest.NAT_HARVESTER_LOCAL_ADDRESS=<Local.IP.Address>
 org.ice4j.ice.harvest.NAT_HARVESTER_PUBLIC_ADDRESS=<Public.IP.Address>
 
 
+# toolbar setting
+
+edit this file >> /etc/jitsi/meet/<your_domain>-config.js
+
+    toolbarButtons: [
+        'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+        'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',
+        'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 'raisehand',
+        'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
+     ],
+
+
