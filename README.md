@@ -80,3 +80,8 @@ edit this file >> /etc/jitsi/meet/<your_domain>-config.js
      ],
 
 
+# location config 
+
+/etc/jitsi/meet/<your_domain>-config.js
+
+/usr/share/jitsi-meet
